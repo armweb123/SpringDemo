@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<a href="/">Home</a>
+Single Books page
+<table border="1">
+    <tr>
+        <th>id</th>
+        <th>title</th>
+        <th>author name</th>
+        <th>price</th>
+        <th>created date</th>
+        <th>user name</th>
+        <th>user surname</th>
+    </tr>
+
+    <td th:text="${book.id}"></td>
+    <td th:text="${book.getTitle()}"></td>
+    <td th:text="${book.getAuthorName()}"></td>
+    <td th:text="${book.getPrice()}"></td>
+    <td th:text="${book.getCreatedDate()}"></td>
+    <td th:text="${book.user.getName()}"></td>
+    <td th:text="${book.user.getSurname()}"></td>
+
+    </tr>
+</table>
+</body>
+</html>
